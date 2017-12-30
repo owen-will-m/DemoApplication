@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+android:id="@+id/linearLayout2"
+	android:background="#669900"
+	>
+	<LinearLayout
+	        android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+	android:padding="10dp"
+	android:id="@+id/linearLayout1"
+	   
+	    />
+        <com.google.android.gms.ads.AdView 
+                         android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="ca-app-pub-5228682528822987/2677296950"
+                         ads:adSize="BANNER"
+                        
+                         />
+    
+
+</LinearLayout>
