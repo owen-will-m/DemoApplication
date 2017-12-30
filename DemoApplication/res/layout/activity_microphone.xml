@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MicrophoneActivity" >
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="RECORDING"
+        android:textSize="10pt"
+        android:id="@+id/centerText"
+        />
+<Button
+    android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Start"
+        android:layout_toLeftOf="@id/centerText"
+        android:id="@+id/buttonStart"
+    />
+<Button
+    android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/centerText"
+        android:id="@+id/buttonStop"
+        android:text="Stop"
+    />
+
+<Button
+    android:id="@+id/player"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="32dp"
+    android:text="Play" />
+
+<EditText
+    android:id="@+id/nameOfFile"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/player"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="21dp"
+    android:ems="10"
+    android:hint="Save as / Play file" >
+
+    <requestFocus />
+</EditText>
+
+<RadioGroup
+    android:id="@+id/chooseFormat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/buttonStart"
+    android:layout_below="@+id/buttonStart"
+    android:layout_marginTop="18dp">
+    <RadioButton
+        android:text = ".3gp"
+        android:id="@+id/threeGP"
+        />
+    <RadioButton
+        android:text = ".AAC"
+        android:id="@+id/aac"
+        />
+    <RadioButton
+        android:text = ".MPEG4"
+        android:id="@+id/mpeg4"
+        />
+    
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/chooseEncoding"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonStop"
+    android:layout_marginTop="18dp"
+    android:layout_toRightOf="@+id/chooseFormat"
+        >
+        <RadioButton
+            android:id="@+id/encodeAac"
+            android:text="AAC"
+            />
+<RadioButton
+            android:id="@+id/aaceld"
+            android:text="AMR_NB"
+            />
+        <RadioButton
+            android:id="@+id/amrwb"
+            android:text="AMR_WB"
+            />
+        <RadioButton
+            android:id="@+id/heaac"
+            android:text="HE_AAC"
+            />
+    </RadioGroup>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/hertz"
+    android:ems="5"
+    android:layout_above="@+id/nameOfFile"
+    android:layout_centerHorizontal="true"
+    android:hint="SR (kHz)"
+    />
+
+
+
+</RelativeLayout>

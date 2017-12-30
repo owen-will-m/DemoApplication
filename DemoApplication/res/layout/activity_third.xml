@@ -1,0 +1,46 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ThirdActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:text="Displays use of absolute layout and spinner!"/>
+    
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="25dp"
+        android:layout_y="100dp"
+        android:prompt="@string/prompt"
+        android:entries="@array/states" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_x="180dp"
+        android:layout_y="199dp"
+        android:text="Lol, look how i can place these anywhere w/o reason!" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_x="40dp"
+        android:layout_y="329dp"
+        android:hint="Something to say about this state" />
+
+</AbsoluteLayout>

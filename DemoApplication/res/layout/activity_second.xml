@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SecondActivity" >
+   <TextView
+       android:background="#000000"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:text="This activity demonstrates the relative layout and radio buttons"
+       android:textColor="#ffffff"
+       android:layout_alignParentTop="true"
+       />
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+        <RadioButton
+            android:id="@+id/ten"
+            android:text="10%"
+            android:textSize="15pt"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twenty"
+        android:text="20%"
+        android:textSize="15pt"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirty"
+        android:text="30%"
+        android:textSize="15pt"
+        />
+        
+        </RadioGroup>
+    <TextView 
+        android:id="@+id/text1"
+        android:layout_above="@id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose your tip percentage"
+        android:textSize="10pt"
+        android:paddingTop="50dp"
+        />
+    <EditText
+
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit1"
+        android:hint="Enter your bill amount"
+        android:textSize="10pt"
+        android:layout_above="@id/text1"
+        />
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg1"
+            android:hint="Your calculated tip is"
+            android:id="@+id/text2"
+            android:layout_centerHorizontal="true"
+            android:textSize="10pt"
+            />
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/text3"
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_centerHorizontal="true"
+            android:hint="Your total bill is"
+            android:textSize="10pt"
+            />
+        <Button
+            android:id="@+id/butts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text3"
+            android:text="next"
+            android:layout_centerHorizontal="true"
+            />
+</RelativeLayout>
